@@ -1,8 +1,3 @@
-[![Build
-Status](https://travis-ci.org/PyBossa/pybossa.svg?branch=master)](https://travis-ci.org/PyBossa/pybossa) [![Code Health](https://landscape.io/github/PyBossa/pybossa/master/landscape.svg)](https://landscape.io/github/PyBossa/pybossa/master) [![Coverage
-Status](https://img.shields.io/coveralls/PyBossa/pybossa.svg)](https://coveralls.io/r/PyBossa/pybossa?branch=master)
-[![Documentation](https://readthedocs.org/projects/pybossa/badge/?version=latest)](http://docs.pybossa.com) [![License](http://img.shields.io/badge/license-agplv3-b75bb6.svg)](http://www.gnu.org/licenses/agpl-3.0.html) [![Slack](http://slackin.crowdcrafting.org/badge.svg)](http://slackin.crowdcrafting.org) [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.17516.svg)](https://zenodo.org/record/17516)
-
 # MicroMappers Pybossa
 MicroMappers Pybossa is an open source platform for digit valunteers assiststance to microtasking during crises and scientific researches in humantarian fields.
 MicroMappers Pybossa is based on pybossa. And, some logic was updated based on MicroMappers Pybossa needs. For pybossa, please see the below.
