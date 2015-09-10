@@ -3,21 +3,9 @@ Status](https://travis-ci.org/PyBossa/pybossa.svg?branch=master)](https://travis
 Status](https://img.shields.io/coveralls/PyBossa/pybossa.svg)](https://coveralls.io/r/PyBossa/pybossa?branch=master)
 [![Documentation](https://readthedocs.org/projects/pybossa/badge/?version=latest)](http://docs.pybossa.com) [![License](http://img.shields.io/badge/license-agplv3-b75bb6.svg)](http://www.gnu.org/licenses/agpl-3.0.html) [![Slack](http://slackin.crowdcrafting.org/badge.svg)](http://slackin.crowdcrafting.org) [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.17516.svg)](https://zenodo.org/record/17516)
 
-PyBossa is an open source platform for crowd-sourcing online (volunteer)
-assistance to perform tasks that require human cognition, knowledge or
-intelligence (e.g. image classification, transcription, information location
-etc).
-
-![Shuttleworth Foundation Funded](http://pybossa.com/assets/img/shuttleworth-funded.png)
-
-PyBossa was inspired by the [BOSSA](http://bossa.berkeley.edu/) crowdsourcing engine but is written in
-python (hence the name!). It can be used for any distributed tasks project
-but was initially developed to help scientists and other researchers
-crowd-source human problem-solving skills!
-
-# See it in Action
-
-PyBossa powers [Crowdcrafting.org](http://crowdcrafting.org/) and [MicroPast](http://crowdsourced.micropasts.org/) a joint project by British Museum and University College of London.
+# MicroMappers Pybossa
+MicroMappers Pybossa is an open source platform for digit valunteers assiststance to microtasking during crises and scientific researches in humantarian fields.
+MicroMappers Pybossa is based on pybossa. And, some logic was updated based on MicroMappers Pybossa needs. For pybossa, please see the below.
 
 # Installing and Upgrading
 
@@ -39,16 +27,19 @@ Just run the following command:
 # Useful Links
 
 * [Documentation](http://docs.pybossa.com/)
-* [Mailing List](http://lists.okfn.org/mailman/listinfo/open-science-dev)
 
-# Contributing
+# Pybossa
+PyBossa is an open source platform for crowd-sourcing online (volunteer)
+assistance to perform tasks that require human cognition, knowledge or
+intelligence (e.g. image classification, transcription, information location
+etc).
 
-If you want to contribute to the project, please, check the
-[CONTRIBUTING file](CONTRIBUTING.md).
+PyBossa was inspired by the [BOSSA](http://bossa.berkeley.edu/) crowdsourcing engine but is written in
+python (hence the name!). It can be used for any distributed tasks project
+but was initially developed to help scientists and other researchers
+crowd-source human problem-solving skills!
 
-It has the instructions to become a contributor.
-
-## Authors
+PyBossa powers [Crowdcrafting.org](http://crowdcrafting.org/) and [MicroPast](http://crowdsourced.micropasts.org/) a joint project by British Museum and University College of London.
 
 * [Daniel Lombraña González](http://daniellombrana.es) - [Citizen Cyberscience Centre](http://citizencyberscience.net/), [Shuttleworth Fellow](http://www.shuttleworthfoundation.org/fellows/daniel-lombrana/)
 * Rufus Pollock - [Open Knowledge Foundation](http://okfn.org/)
@@ -69,4 +60,4 @@ cooperation with the community in the case of network server software.
 
 Documentation and media is under a Creative Commons Attribution License version
 3.
-# Pybossa
+
