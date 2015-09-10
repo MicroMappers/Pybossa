@@ -1,0 +1,57 @@
+.headerlink {
+    font-family: "FontAwesome" !important;
+    font-size: 0px;
+}
+
+.headerlink:before {
+    content: "\f0c1";
+    font-size: 20px;
+    padding: 10px;
+}
+
+.admonition {
+    border-radius: 3px;
+    background-color: rgb(51, 51, 51);
+    padding: 10px 20px;
+    margin: 10px 0px;
+    color: white;
+}
+
+.admonition-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(238, 113, 71);
+
+}
+
+.mytoc {
+    /* border:2px solid rgba(0,0,0,1);*/
+    border-radius: 3px;
+    background-color: #f7f6f5;
+}
+
+.mytoc ul, .mytoc ul ul, .mytoc ul ul ul {
+    padding-left: 20px;
+}
+
+
+.highlight {
+    background-color: transparent;
+}
+
+
+.highlight > pre {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+blockquote > div > .simple {
+    padding-left: 10px;
+}
+
+.injected {
+    display: none;
+}

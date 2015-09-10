@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pybossa
+Version: 0.2.2
+Summary: Open Source CrowdSourcing framework
+Home-page: https://github.com/PyBossa/pybossa
+Author: SF Isle of Man Limited
+Author-email: info@pybossa.com
+License: AGPLv3
+Description: PyBossa is an open source crowdsourcing solution for volunteer computing, thinking and sensing 
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

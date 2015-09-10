@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% import "projects/_helpers.html" as helper %}
+{% import "account/_helpers.html" as account_helper %}
+
+{% block content %}
+      <div class="banner">
+        <div class="row">
+          <div class="span7">
+              <h1>{{ brand }}</h1>
+              {% include ['custom/front_page_text.html', 'home/_pybossa_text.html'] ignore missing %}
+          </div>
+          <div class="span5">
+            <a class="twitter-timeline" href="https://twitter.com/MicroMappers" data-widget-id="461434540192321536">Tweets by @MicroMappers</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+          </div>
+        </div>
+      </div>
+
+      <section>
+        <h2><i class="icon-th"></i>{{ _('Featured Clickers') }}: MicroMappers is still under development and still being tested</h2>
+        <div class="row">
+          {% for project in categories_projects['featured'] %}
+          <div class="span3">
+            <div class="project box">
+                {% if project.info.thumbnail %}
+                <a href="{{url_for('project.details', short_name=project.short_name)}}" class="image" style="background-image:url({{project.info.thumbnail}})"></a>
+                {% else %}
+                <a href="{{url_for('project.details', short_name=project.short_name)}}" class="image" style="background-image:url({{url_for('static',filename='img/placeholder.project.png')}})"></a>
+                {% endif %}
+                <h3>{{project.name | truncate(20, true)}}</h3>
+                <p>{{project.description | truncate(32, true)}}</p>
+                <p><a href="{{url_for('project.details',short_name=project.short_name)}}" class="btn btn-mini btn-info">Info</a> <a href="{{url_for('project.presenter',short_name=project.short_name)}}" class="btn btn-mini btn-primary">{{ _('Start') }}</a></p>
+            </div>
+          </div>
+          {% endfor %}
+          {% for i in range(4-top_projects|count)%}
+          <div class="span3">
+            <div class="project box">
+                <a href="#" class="image" style="background-image:url({{url_for('static',filename='img/placeholder.project.png')}})"></a>
+                <h3>{{ _('Your project') }}</h3>
+                <p>{{ _('could be here!') }}</p>
+                <p><a href="{{url_for('project.new')}}" class="btn btn-mini btn-primary">{{ _('Create a project') }}</a></p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      
+      {% if top_users %}
+      <section id="top_users" class="grey">
+        <h2><i class="icon-group"></i>{{ _('Most Active Volunteers') }}</h2>
+        <ul class="users">
+            {% for user in top_users %}
+          <li>
+          <a href="{{url_for('account.profile', name=user.name)}}" data-content="
+                <strong>{{_('Joined')}}:</strong> {{user.created[0:10]}} 
+                <br/>
+                <strong>{{_('Submitted Tasks')}}:</strong> {{user.task_runs}}
+                " rel="popover" data-original-title="<strong>{{user.fullname}}</strong>">
+                {{ account_helper.render_user_thumbnail(user, upload_method, style="height:90px; width:90px;") }}
+           </a>
+           <span class="label label-success">{{user.score}}</span> <small>{{_('Tasks')}}</small>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+<script>
+$("a[rel=popover]").popover({
+        html: true,
+        animation: true,
+        trigger: 'hover',
+        placement: 'top'
+                });
+</script>
+{{ helper.broken_image() }}
+{% endblock %}
