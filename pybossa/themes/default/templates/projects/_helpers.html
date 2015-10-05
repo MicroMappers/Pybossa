@@ -196,11 +196,9 @@ function imgError(image) {
 <div class="row-fluid">
     <div class="span1"><input type="text" value="{{overall_progress | round |int}}" class="dial"></div>
     <h2><strong> {{_('Overall progress')}}</strong>: {{ overall_progress | round | int }}% {{_('completed')}}
-        {% if show_contribute_btn %}
-        {{ render_contribute_button(project) }}
-        {% elif show_n_tasks %}
+
         <span class="pull-right"><strong>{{n_tasks}}</strong> {{_('Tasks')}}</span>
-        {% endif %}
+
 
     </h2>
 </div>
