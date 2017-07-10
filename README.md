@@ -1,5 +1,5 @@
 # MicroMappers Pybossa
-MicroMappers Pybossa is an open source platform for digit valunteers assiststance to microtasking during crises and scientific researches in humantarian fields.
+MicroMappers Pybossa is an open source platform for digital valunteers assiststance to microtasking during crises and scientific researches in humantarian fields.
 MicroMappers Pybossa is based on pybossa. And, some logic was updated based on MicroMappers Pybossa needs. For pybossa, please see the below.
 
 # Installing and Upgrading
